@@ -9,6 +9,9 @@ Used unsupervised machine learning techniques to analyze cryptocurrency data. Wo
 ### Preprocessed the Data for PCA
 
 Used knowledge of Pandas, to preprocess the dataset in order to perform PCA. 
+- Used Crypto Data CSV which has all the cryptocurrencies being traded and mined
+- Got dummies was then utilized for the purpose of creating variables for text features
+- Finally, the data was standardized with StandardScaler()
 
 ### Reduced Data Dimensions Using PCA
 
@@ -16,7 +19,19 @@ Used knowledge of how to apply the Principal Component Analysis (PCA) algorithm,
 
 ### Clustering Cryptocurrencies Using K-means
 
-Used knowledge of the K-means algorithm, to create an elbow curve using hvPlot to find the best value for K from the pcs_df DataFrame. Then, used the K-means algorithm to predict the K clusters for the cryptocurrencies’ data.
+To complete this deliverable, the K-algorithm was applied in order to cluster the cryptocurencies using the PCA data using the following steps:
+- Creating an elbow curve to identify the best K-value
+- Making predictions on the cryptocurrency K-clusters
+- Lastly, producing a new DataFrame with the same index as crypto_df, but has the columns:
+  - Algorithm
+  - ProofType
+  - TotalCoinsMined
+  - TotalCoinSupply
+  - PC 1
+  - PC 2
+  - PC 3
+  - CoinName
+  - Class
 
 ### Visualizing Cryptocurencies Results 
 
